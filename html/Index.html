@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            align-items: center;
+        }
+    
+        .Nav{
+            border:2px solid black;
+            display:flex;
+            justify-content:space-evenly;
+            height: 60px;
+            align-items: center;
+            background-color: black;
+            overflow: hidden;
+            border:2px solid white;
+        }
+        .Nav a{
+            text-decoration: none;
+            color: antiquewhite;
+            padding: 4px;
+            margin: 2px;
+            float: left;
+            text-align: center;
+            /* border:2px solid white; */
+        }
+        .item1,.item2,.item3,.item4{
+            height: 40px;
+            width: 75px;
+            font-size:18px;
+            text-align: center;
+            box-sizing: border-box;
+            /* border:2px solid white; */
+        }
+        .item1 a:hover,.item2 a:hover,.item3 a:hover,.item4 a:hover{
+            background-color: antiquewhite;
+            color:black;
+        }
+        .line{
+            border:2px solid black;
+            width: 99.7%;
+            height: 1px;
+            /* border: 2px solid white; */
+        }
+        .line_1{
+            border:2px solid black;
+           background-color:blue;
+           height: 2px;
+           width: 20%;
+           position: relative;
+           animation-name:s1;
+           animation-duration: 10s;
+           animation-iteration-count: infinite;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content:space-between;
+            align-items: center;
+            margin:auto;
+            height: 1200px;
+            width: 90%;
+            box-sizing: border-box;
+            /* border: 2px solid whitesmoke; */
+        }
+        #a1,#a2,#a3{
+            height: 390px;
+            width: 99.5%;
+            border: 2px solid whitesmoke;
+            
+        }
+        #a1{
+           margin-top: 4px;
+           background-image: url(../images/two.jpg) ;
+           background-repeat: no-repeat;
+           background-size: 100%;
+           background-position: center;
+        }
+        #a2{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            background-color:antiquewhite ;
+        }
+        #a2 img{
+            
+            width:550px;
+            height: 390px;
+            box-sizing: border-box;
+        }
+        #a2 p{
+            margin:0px;
+            width:59%;
+            height: 390px;
+            font-size: 20px;
+            margin: auto;
+            padding-top: 40px;
+            text-align: center;
+            float:right;
+            color: black;
+            background-color: antiquewhite;
+            /* border:2px solid white; */
+            box-sizing: border-box;
+            
+        }
+        #a3 p{
+            color: antiquewhite;
+            margin: auto;
+            padding: 80px;
+        }
+        @keyframes s1{
+            from{
+                width:20% ;
+            }
+            to{
+                width:100% ;
+                background-color:rgb(215, 43, 101);
+            }
+        }
+        @media (max-width:600px){
+            .item1,.item2,.item3,.item4{
+                font-size:12px;
+                height: 35px;
+                margin: auto;
+            }
+        }
+        @media (max-width:1515px){
+            #a2 p{
+              max-width: 600px;
+              text-align: center;
+              box-sizing: border-box;
+              margin: auto;
+            }
+        }
+        @media (max-width:1288px){
+            #a2 p{
+              max-width: 400px;
+              text-align: center;
+              box-sizing: border-box;
+              margin: auto;
+            }
+        }
+        @media (max-width:1065px){
+            #a2 p{
+              max-width: 200px;
+              text-align: center;
+              box-sizing: border-box;
+              margin: auto;
+            }
+        }
+        @media (max-width:845px){
+            #a2 p{
+              max-width: 100px;
+              text-align: center;
+              box-sizing: border-box;
+              margin: auto;
+            }
+        }
+           
+    </style>
+</head>
+<body>
+    <div class="Nav">
+        <div class="item1">
+            <a href="./Home.html">Home</a>
+        </div>
+        <div class="item2">
+            <a href="./About_us.html">Info</a>
+        </div>
+        <div class="item3">
+            <a href="./Courses.html">Courses</a>
+        </div>
+        <div class="item4">
+            <a href="./Help.html">Help</a>
+        </div>
+    </div>
+    <div class="line">
+        <div class="line_1"></div>
+    </div>
+    <div class="container">
+        <div id="a1">
+        </div>
+        <div id="a2">
+            <img src="../images/one.jpg" alt="programming image">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sapiente incidunt non earum ipsa? Consequatur aspernatur exercitationem incidunt et qui, voluptates quisquam ex veniam repellat quibusdam consequuntur minus voluptate aliquam.</p>
+        </div>
+        <div id="a3">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit commodi, inventore eveniet quibusdam dolorum ut cupiditate. Aperiam debitis corrupti libero fuga. Provident illo dolor saepe? Ut rem totam repudiandae fugit.
+            Quas sunt ab consequatur voluptatum dolore aliquid explicabo ipsam quo excepturi repellendus itaque pariatur beatae, inventore error eum omnis at saepe! Neque adipisci tempore unde blanditiis saepe veritatis, quos labore.
+            Animi facere amet veritatis consequatur, cumque laborum similique aut aspernatur, odio ipsam expedita harum, unde qui inventore minus obcaecati maiores? Nobis esse commodi sit! Soluta cumque magnam minus nemo maxime.
+            Itaque aspernatur eum magni, perferendis ex laboriosam cupiditate distinctio eius unde cum molestiae esse hic qui? Neque magnam optio nisi cumque. Debitis consequuntur quia at cum facilis ut voluptate esse?</p>
+        </div>
+    </div>
+    
+</body>
+</html>
